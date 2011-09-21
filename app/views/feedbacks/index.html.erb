@@ -1,0 +1,21 @@
+<%= image_tag "logo.png" %>
+<p id="notice"><%= notice %></p>
+<div id="feedback_section">
+<div id="feedback_form">
+<%= render 'form' %>
+</div>
+
+<div id="feedbacks">
+<% @feedbacks.each do |feedback| %>
+<div id="feedback">
+	<p>
+<%= feedback.name %> Says:
+<%= feedback.content %>
+</p>
+</div>
+<% end %>
+</div>
+</div>
+
+
+

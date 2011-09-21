@@ -1,0 +1,17 @@
+
+<%= image_tag "logo.png" %>
+
+
+
+<% @messages.each do |message| %>
+  
+	<div id ="message">
+		<p>
+    	<%= message.title %><br/><br/>
+    	<%= message.content %><br/><br/>
+		</p>
+ 	</div>
+<% end %>
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to MiniEden Chinese Restaurant</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true_or_false&amp;key=ABQIAAAAJmEaEp5Z0PFjaKhlMmq5dBTJQa0g3IQ9GZqIMmInSLzwtGDKaBRNqpFy_rqkuNmWjQ24c_nzQeCRRw" type="text/javascript"></script>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body onload="initialize()" onunload="GUnload()">
+	<div class="container">
+<div id="left-sidebar">
+	<div id="nav">
+		<ul>
+			<li><%= link_to "Home", root_path%></li>
+			 <li><%= link_to "Menu", menu_path%></li>
+			<li><%= link_to "Specials",specials_path%></li>
+			<li><%= link_to "Messages",messages_path%></li>
+			<li><%= link_to "Feedbacks",feedbacks_path%></li>
+			<li><%= link_to "Gallery",gallery_path%></li>
+			<li><%= link_to "Location", location_path%></li>
+		
+		</ul>
+		<div id="call_now">
+			<%= image_tag "callnow.png" %>
+		</div>
+	</div>
+	
+</div>
+<div id="content_wrapper">
+	<div id="content">
+	<%= yield %>
+	</div>
+</div>
+</div>
+</body>
+</html>

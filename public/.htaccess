@@ -1,0 +1,4 @@
+PassengerEnabled on
+RailsEnv development #or production
+PassengerAppRoot application's_path
+RailsBaseURI /

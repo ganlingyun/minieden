@@ -1,0 +1,150 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* rotator in-page placement */
+ div.rotator {
+	position:relative;
+	height:345px;
+	margin-top:30px;
+	float:right;
+
+}
+/* rotator css */
+div.rotator ul li {
+	float:left;
+	position:absolute;
+	list-style: none;
+	margin-left:300px;
+	margin-top:0px;
+}
+/* rotator image style */	
+div.rotator ul li img {
+	border:1px solid #ccc;
+	padding: 4px;
+	background: #FFF;
+}
+div.rotator ul li.show {
+	z-index:500;
+}
+
+
+#delivery_note
+{
+	font-size:18px;
+	color:#f6ed89;
+	margin-bottom:0px;
+	
+}
+
+#welcome{
+	
+	font-size:18px;
+	margin-bottom:20px;
+	margin-top:50px;
+}
+
+#section1{
+	height:300px;
+	margin-top:40px;
+}
+#section2{
+	height:300px;
+	margin-top:10px;
+}
+
+#left_subsection{
+	height:300px;
+	float:left;
+	font-size:15px
+}
+
+#left_subsection a{
+	color:#fff;
+	background-color:#7f181b;
+}
+#left_subsection a:hover{
+	text-decoration:none; 
+}
+
+#lunch_special{
+	width:500px;
+	height:212px;
+	opacity:0.4;
+	background-color:#fff;
+	margin-top:20px;
+	border:10px solid black;
+	filter:alpha(opacity=60);
+}
+
+#lunch_special_wording p{
+	color:black;
+	font-family:"Times New Roman";
+	font-size:18px;
+	text-align:center;
+	padding:10px;
+}
+#family_pack_1{
+	width:500px;
+	height:402px;
+	opacity:0.4;
+	background-color:#fff;
+	margin-top:20px;
+	border:10px solid black;
+	filter:alpha(opacity=60);
+}
+
+#family_pack_1_wording p{
+	color:black;
+	font-family:"Times New Roman";
+	font-size:18px;
+	text-align:center;
+	padding:10px;
+}
+
+#message
+{
+	width:600px;
+	background-color:#000;
+	opacity:0.4;
+	border:10px solid black;
+	margin-top:30px;
+}
+
+#message p{
+	color:white;
+}
+
+#feedback{
+	width:320px;
+	background:rgba(0,0,0,0.4);
+	margin-top:20px;
+	padding:15px;
+	overflow:hidden;
+}
+
+#feedback p{
+	color:white;
+	word-wrap:break-word;
+	
+}
+
+#feedback_section{
+	margin-top:100px;
+	
+}
+#feedback_form{
+	float:left;
+}
+#feedbacks{
+	float:right;
+	margin-right:10px;
+	margin-top:-30px;
+	overflow-x:hidden;
+	height:400px;
+}
+#map_canvas{
+	margin-top:50px;
+	width: 600px; 
+	height: 340px;
+	border:1px solid #ccc;"
+}

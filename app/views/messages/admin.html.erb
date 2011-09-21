@@ -1,0 +1,30 @@
+<h2>Listing messages</h2>
+
+
+
+<% @messages.each do |message| %>
+  
+    Title : <%= message.title %><br/>
+    Message: <%= message.content %><br/>
+    Name: <%= message.name %><br/>
+    <%= link_to 'Show', message %>
+    <%= link_to 'Edit', edit_message_path(message) %>
+    <%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %>
+  	<br/><br/>
+<% end %>
+
+
+<h2>Listing Feedbacks</h2>
+
+<% @feedbacks.each do |feedback| %>
+  	<%= feedback.name %><br/>
+    <%= feedback.content %><br/>
+    <%= link_to 'Show', feedback %>
+    <%= link_to 'Edit', edit_feedback_path(feedback) %>
+    <%= link_to 'Destroy', feedback, :confirm => 'Are you sure?', :method => :delete %>
+  	<br/><br/>
+<% end %>
+
+<br/>
+<%= link_to 'New Message', new_message_path %><br/>
+<%= link_to 'New Feedback', new_message_path %>
